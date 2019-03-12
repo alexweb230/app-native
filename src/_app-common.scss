@@ -23,8 +23,12 @@
 }
 
 //Action bar
-ActionBar .action-bar-title {
-    horizontal-align: center;
+ActionBar{
+    .action-bar-title {
+        horizontal-align: center;
+
+    }
+
 }
 
  // Drawer navigation custom styles
