@@ -1,5 +1,5 @@
 <ActionBar class="action-bar">
-    <GridLayout columns="*,*,*" width="100%">
+    <GridLayout columns="*,*" width="100%" class="action-bar-inner">
 
 
 
@@ -16,9 +16,20 @@
     <!--<ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"-->
                 <!--ios.position="left">-->
     <!--</ActionItem>-->
-        <Label text="Main" row="0" col="0"></Label>
-        <Label text="Main" row="0" col="1"></Label>
-        <Label text="Main" row="0" col="2" (tap)="onDrawerButtonTap()"></Label>
+        <Label
+                col="0"
+                textAlignment="center"
+                horizontalAlignment="left"
+                class="logo">
+        </Label>
+
+        <Label text="&#xf0c9;"
+               col="1"
+               (tap)="onDrawerButtonTap()"
+               textAlignment="center"
+               horizontalAlignment="right"
+               class="btn-nav fa fa-bars">
+        </Label>
     <!--<Label class="action-bar-title" text="Main"></Label>-->
     <!--<Label class="action-ba" text="Main"></Label>-->
     </GridLayout>
