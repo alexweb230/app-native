@@ -11,9 +11,12 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
     
         <ScrollView row="1">
             <StackLayout class="sidedrawer-content">
-                <GridLayout columns="auto, *" class="sidedrawer-list-item">
+                <GridLayout
+                        *ngFor="let list of navList"
+                        columns="auto, *"
+                        class="sidedrawer-list-item">
                     <Label col="0" text="&#xf015;" class="fa"></Label>
-                    <Label col="1" text="Homedddd" class="p-r-10"></Label>
+                    <Label col="1" text="{{list.title}}" class="p-r-10"></Label>
                 </GridLayout>
             </StackLayout>
         </ScrollView>
