@@ -18,6 +18,8 @@ export class AppComponent implements OnInit {
         // Use the component constructor to inject services.
     }
 
+     public sPlaceHolder: string = 'пошук';
+
     ngOnInit(): void {
         this._activatedUrl = "/home";
         this._sideDrawerTransition = new SlideInOnTopTransition();
