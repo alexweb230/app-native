@@ -72,11 +72,17 @@ $sidedrawer-list-icon-size: 50;
 
     }
     .header-action{
+      padding-top: 20px;
       .header-action-logo{
-        background-image: url('~/assets/img/png/logo.png');
+        background-image: url('~/assets/img/png/logo-menu.png');
         background-repeat: no-repeat;
-        width: 96px;
-        height: 32px;
+        width: 90px;
+        height: 90px;
+      }
+      .live{
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #CE3330;
       }
     }
   }

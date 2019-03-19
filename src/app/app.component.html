@@ -9,7 +9,7 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
             <DockLayout class="main-search">
                 <SearchBar hint="{{sPlaceHolder}}"    (submit)="onSearchSubmit($event)"></SearchBar>
             </DockLayout>
-            <FlexboxLayout class="header-action">
+            <FlexboxLayout class="header-action" justifyContent="space-between" alignItems="center">
                 <Label text="" class="header-action-logo"></Label>
                 <Label text="{{textLive}}" class="live"></Label>
             </FlexboxLayout>

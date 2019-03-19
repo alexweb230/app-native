@@ -14,7 +14,7 @@ export class AppComponent {
 
 
 
-    navLIst: [] = [
+    navLIst = [
         "новости",
         "аналітика",
         "Архів",
@@ -22,6 +22,4 @@ export class AppComponent {
         "хроніки 112",
         "Досьє"
     ]
-
-
 }
