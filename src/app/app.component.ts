@@ -6,19 +6,30 @@ import { Component, OnInit, ViewChild } from "@angular/core";
     selector: "ns-app",
     templateUrl: "app.component.html"
 })
-export class AppComponent implements OnInit {
+export class AppComponent  {
 
-    public sPlaceHolder: string = 'пошук';
+    public sPlaceHolder: string = "пошук";
 
-    navList: [] = [
-        {title: 'новости'},
-        {title: 'аналітика'},
-        {title: 'Архів'},
-        {title: 'телеканал'},
-        {title: 'хроніки 112'},
-        {title: 'хроніки 112'},
-        {title: 'Досьє'}
+    public nList: string = "ssssssss";
 
+
+    navLIst = [
+        "новости",
+        "аналітика",
+        "Архів",
+        "телеканал",
+        "хроніки 112",
+        "Досьє"
     ]
+
+    // navList: [] = [
+    //     {title: 'новости'},
+    //     {title: 'аналітика'},
+    //     {title: 'Архів'},
+    //     {title: 'телеканал'},
+    //     {title: 'хроніки 112'},
+    //     {title: 'Досьє'}
+    //
+    // ]
 
 }

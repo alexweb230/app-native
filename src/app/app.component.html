@@ -10,13 +10,42 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
         </StackLayout>
     
         <ScrollView row="1">
-            <StackLayout class="sidedrawer-content">
+            <StackLayout class="sidedrawer-content main-nav">
                 <GridLayout
-                        *ngFor="let list of navList"
                         columns="auto, *"
                         class="sidedrawer-list-item">
                     <Label col="0" text="&#xf015;" class="fa"></Label>
-                    <Label col="1" text="{{list.title}}" class="p-r-10"></Label>
+                    <Label col="1" text="{{navLIst[0]}}" class="p-r-10"></Label>
+                </GridLayout>
+                <GridLayout
+                        columns="auto, *"
+                        class="sidedrawer-list-item">
+                    <Label col="0" text="&#xf015;" class="fa"></Label>
+                    <Label col="1" text="{{navLIst[1]}}" class="p-r-10"></Label>
+                </GridLayout>
+                <GridLayout
+                        columns="auto, *"
+                        class="sidedrawer-list-item">
+                    <Label col="0" text="&#xf015;" class="fa"></Label>
+                    <Label col="1" text="{{navLIst[2]}}" class="p-r-10"></Label>
+                </GridLayout>
+                <GridLayout
+                        columns="auto, *"
+                        class="sidedrawer-list-item">
+                    <Label col="0" text="&#xf015;" class="fa"></Label>
+                    <Label col="1" text="{{navLIst[3]}}" class="p-r-10"></Label>
+                </GridLayout>
+                <GridLayout
+                        columns="auto, *"
+                        class="sidedrawer-list-item">
+                    <Label col="0" text="&#xf015;" class="fa"></Label>
+                    <Label col="1" text="{{navLIst[4]}}" class="p-r-10"></Label>
+                </GridLayout>
+                <GridLayout
+                        columns="auto, *"
+                        class="sidedrawer-list-item">
+                    <Label col="0" text="&#xf015;" class="fa"></Label>
+                    <Label col="1" text="{{navLIst[5]}}" class="p-r-10"></Label>
                 </GridLayout>
             </StackLayout>
         </ScrollView>
