@@ -72,7 +72,12 @@ $sidedrawer-list-icon-size: 50;
 
     }
     .header-action{
-
+      .header-action-logo{
+        background-image: url('~/assets/img/png/logo.png');
+        background-repeat: no-repeat;
+        width: 96px;
+        height: 32px;
+      }
     }
   }
 

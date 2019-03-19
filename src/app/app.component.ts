@@ -10,6 +10,8 @@ export class AppComponent {
 
     public sPlaceHolder: string = "пошук";
 
+    public textLive: string = "live";
+
 
 
     navLIst: [] = [
