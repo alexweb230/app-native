@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from "@angular/core";
+import {Component, OnInit, ViewChild} from "@angular/core";
 
 
 @Component({
@@ -6,14 +6,12 @@ import { Component, OnInit, ViewChild } from "@angular/core";
     selector: "ns-app",
     templateUrl: "app.component.html"
 })
-export class AppComponent  {
+export class AppComponent {
 
     public sPlaceHolder: string = "пошук";
 
-    public nList: string = "ssssssss";
 
-
-    navLIst = [
+    navLIst: [] = [
         "новости",
         "аналітика",
         "Архів",
@@ -22,14 +20,5 @@ export class AppComponent  {
         "Досьє"
     ]
 
-    // navList: [] = [
-    //     {title: 'новости'},
-    //     {title: 'аналітика'},
-    //     {title: 'Архів'},
-    //     {title: 'телеканал'},
-    //     {title: 'хроніки 112'},
-    //     {title: 'Досьє'}
-    //
-    // ]
 
 }
