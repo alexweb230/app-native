@@ -6,7 +6,13 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
 <RadSideDrawer [drawerTransition]="sideDrawerTransition">
     <GridLayout tkDrawerContent rows="auto, *" class="sidedrawer sidedrawer-left">
         <StackLayout row="0" class="sidedrawer-header">
-            <SearchBar hint="{{sPlaceHolder}}"    (submit)="onSearchSubmit($event)"></SearchBar>
+            <DockLayout class="main-search">
+                <SearchBar hint="{{sPlaceHolder}}"    (submit)="onSearchSubmit($event)"></SearchBar>
+            </DockLayout>
+            <FlexboxLayout class="header-action">
+                <Label text="" class="header-action-logo"></Label>
+                <Label text="Live"></Label>
+            </FlexboxLayout>
         </StackLayout>
     
         <ScrollView row="1">

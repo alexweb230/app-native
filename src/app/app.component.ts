@@ -11,6 +11,7 @@ export class AppComponent {
     public sPlaceHolder: string = "пошук";
 
 
+
     navLIst: [] = [
         "новости",
         "аналітика",
