@@ -12,7 +12,18 @@ export class AppComponent {
 
     public textLive: string = "live";
 
+    public textUA: string = "украiнська";
 
+    public textRU: string = "pociйська";
+
+    active: boolean = true;
+    activeSibling: boolean = false;
+
+    toggleActive(){
+        this.active = !this.active;
+        this.activeSibling = !this.activeSibling;
+
+    }
 
     navLIst = [
         "новости",

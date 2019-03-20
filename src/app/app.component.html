@@ -13,6 +13,10 @@ http://docs.telerik.com/devtools/nativescript-ui/Controls/NativeScript/SideDrawe
                 <Label text="" class="header-action-logo"></Label>
                 <Label text="{{textLive}}" class="live"></Label>
             </FlexboxLayout>
+            <FlexboxLayout class="lang-btns" justifyContent="center" alignItems="center">
+                <Label text="{{textUA}}" class="lang-ua" [ngClass]="active ? 'active': ''" (tap)="toggleActive()"></Label>
+                <Label  text="{{textRU}}" class="lang-ru" [ngClass]="activeSibling ? 'active': ''" (tap)="toggleActive()"></Label>
+            </FlexboxLayout>
         </StackLayout>
     
         <ScrollView row="1">

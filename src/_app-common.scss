@@ -65,23 +65,47 @@ $sidedrawer-list-icon-size: 50;
       color: $ab-color;
 
     }
-    .main-search{
+    .main-search {
       background-color: #CFCFCF;
       border-radius: 30px;
       height: 60px;
     }
-    .header-action{
+    .header-action {
       padding-top: 20px;
-      .header-action-logo{
+      .header-action-logo {
         background-image: url('~/assets/img/png/logo-menu.png');
         background-repeat: no-repeat;
         width: 90px;
         height: 90px;
       }
-      .live{
+      .live {
         font-size: 30px;
         text-transform: uppercase;
         color: #CE3330;
+      }
+    }
+    .lang-btns {
+      height: 60px;
+      border-radius: 20px;
+      background-color: #2D3A59;
+      margin-top: 15px;
+      margin-bottom: 15px;
+
+      .lang-ua {
+        font-size: 18px;
+        text-transform: capitalize;
+        color: #000000;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-right-width: 1px;
+        border-right-color: rgba(0,0,0, 0.6);
+        &.active{
+          color: #FAFBFD;
+        }
+      }
+      .lang-ru {
+        @extend .lang-ua;
+        border-right-width: 0;
       }
     }
   }
@@ -96,7 +120,7 @@ $sidedrawer-list-icon-size: 50;
     .sidedrawer-list-item {
       padding-left: $sidedrawer-list-item-offset-left;
       border-bottom-width: 1px;
-      border-bottom-color: rgba(255,255,255, 0.3);
+      border-bottom-color: rgba(255, 255, 255, 0.3);
       Label {
         //color: $blue-dark;
         font-size: 25px;
@@ -105,7 +129,7 @@ $sidedrawer-list-icon-size: 50;
         text-transform: capitalize;
         font-weight: 300;
       }
-      .arr{
+      .arr {
         width: 24px;
         height: 24px;
         background-image: url('~/assets/img/png/arr.png');
@@ -113,7 +137,6 @@ $sidedrawer-list-icon-size: 50;
         horizontal-align: left;
         margin-left: 15px;
         margin-top: 8px;
-
 
       }
       //.fa {
