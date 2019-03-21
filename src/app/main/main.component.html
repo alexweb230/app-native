@@ -1,26 +1,11 @@
 <ActionBar class="action-bar">
     <GridLayout columns="*,*" width="100%" class="action-bar-inner">
-
-        <!--
-        Use the NavigationButton as a side-drawer button in Android
-        because ActionItems are shown on the right side of the ActionBar
-        -->
-        <!--<NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()" class="page-icon fa"></NavigationButton>-->
-        <!--
-        Use the ActionItem for IOS with position set to left. Using the
-        NavigationButton as a side-drawer button in iOS is not possible,
-        because its function is to always navigate back in the application.
-        -->
-        <!--<ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"-->
-        <!--ios.position="left">-->
-        <!--</ActionItem>-->
         <Label
                 col="0"
                 textAlignment="center"
                 horizontalAlignment="left"
                 class="logo">
         </Label>
-
         <Label text="&#xf0c9;"
                col="1"
                (tap)="onDrawerButtonTap()"
@@ -28,7 +13,6 @@
                horizontalAlignment="right"
                class="btn-nav fa fa-bars">
         </Label>
-
     </GridLayout>
 </ActionBar>
 
@@ -46,7 +30,11 @@
                         flexDirection="column"
                         alignItems="flex-start"
                         class="news-list">
-                    <StackLayout *ngFor="let list of  newsListMain" class="news-list-wrap" orientation="vertical">
+                    <StackLayout
+                            *ngFor="let list of  newsListMain"
+                            [nsRouterLink]="['/detail']"
+                            class="news-list-wrap"
+                            orientation="vertical">
                         <Label text="{{list.title}}" textWrap="true" class="news-list-item"></Label>
                         <FlexboxLayout flexDirection="row" justifyContent="flex-start">
                             <Label text="{{list.data}}" textWrap="true" class="data-time"></Label>
