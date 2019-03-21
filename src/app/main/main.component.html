@@ -1,19 +1,19 @@
 <ActionBar class="action-bar">
     <GridLayout columns="*,*" width="100%" class="action-bar-inner">
 
-    <!--
-    Use the NavigationButton as a side-drawer button in Android
-    because ActionItems are shown on the right side of the ActionBar
-    -->
-    <!--<NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()" class="page-icon fa"></NavigationButton>-->
-    <!--
-    Use the ActionItem for IOS with position set to left. Using the
-    NavigationButton as a side-drawer button in iOS is not possible,
-    because its function is to always navigate back in the application.
-    -->
-    <!--<ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"-->
-                <!--ios.position="left">-->
-    <!--</ActionItem>-->
+        <!--
+        Use the NavigationButton as a side-drawer button in Android
+        because ActionItems are shown on the right side of the ActionBar
+        -->
+        <!--<NavigationButton ios:visibility="collapsed" icon="res://menu" (tap)="onDrawerButtonTap()" class="page-icon fa"></NavigationButton>-->
+        <!--
+        Use the ActionItem for IOS with position set to left. Using the
+        NavigationButton as a side-drawer button in iOS is not possible,
+        because its function is to always navigate back in the application.
+        -->
+        <!--<ActionItem icon="res://navigation/menu" android:visibility="collapsed" (tap)="onDrawerButtonTap()"-->
+        <!--ios.position="left">-->
+        <!--</ActionItem>-->
         <Label
                 col="0"
                 textAlignment="center"
@@ -28,42 +28,86 @@
                horizontalAlignment="right"
                class="btn-nav fa fa-bars">
         </Label>
-    <!--<Label class="action-bar-title" text="Main"></Label>-->
-    <!--<Label class="action-ba" text="Main"></Label>-->
+
     </GridLayout>
 </ActionBar>
 
-<GridLayout>
-    <!--<Label class="page-icon fa" text="&#xf015;"></Label>-->
-    <!--<Label class="page-placeholder" text="&lt;!&ndash; Page content goes here &ndash;&gt;"></Label>-->
 
-        <TabView id="tabViewContainer" >
-            <StackLayout *tabItem="{title: 'новости'}">
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="First Tab"  class="m-15 h2 text-left" color="blue"></Label>
+<TabView id="tabViewContainer">
+    <StackLayout *tabItem="{title: 'новости'}">
+        <GridLayout rows="*">
+            <ScrollView row="0">
+                <FlexboxLayout flexDirection="column"  backgroundColor="lightgray" alignItems="flex-start" class="news-list">
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                    <Label text="Label 1" class="news-list-item"></Label>
+                </FlexboxLayout>
+            </ScrollView>
+        </GridLayout>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'топ-новости'}">
+        <GridLayout rows="*">
+            <ScrollView row="0">
+                <GridLayout class="m-15"
+                            rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
+                    <Label class="h3 m-5" height="50" row="0" text="Title 1"></Label>
+                    <Label class="h3 m-5" height="50" row="1" text="Title 2"></Label>
+                    <Label class="h3 m-5" height="50" row="2" text="Title 3"></Label>
+                    <Label class="h3 m-5" height="50" row="3" text="Title 4"></Label>
+                    <Label class="h3 m-5" height="50" row="4" text="Title 5"></Label>
+                    <Label class="h3 m-5" height="50" row="5" text="Title 6"></Label>
+                    <Label class="h3 m-5" height="50" row="6" text="Title 7"></Label>
+                    <Label class="h3 m-5" height="50" row="7" text="Title 8"></Label>
+                    <Label class="h3 m-5" height="50" row="8" text="Title 9"></Label>
+                    <Label class="h3 m-5" height="50" row="9" text="Title 10"></Label>
+                    <Label class="h3 m-5" height="50" row="10" text="Title 10"></Label>
+                    <Label class="h3 m-5" height="50" row="11" text="Title 11"></Label>
+                    <Label class="h3 m-5" height="50" row="12" text="Title 12"></Label>
+                    <Label class="h3 m-5" height="50" row="13" text="Title 13"></Label>
+                    <Label class="h3 m-5" height="50" row="14" text="Title 14"></Label>
+                    <Label class="h3 m-5" height="50" row="15" text="Title 15"></Label>
+                </GridLayout>
+            </ScrollView>
+        </GridLayout>
 
-            </StackLayout>
-            <StackLayout *tabItem="{title: 'топ-новости'}">
-
-                <Label text="Second Tab" class="m-15 h2 text-left" color="blue"></Label>
-                <Label text="Second Tab"  class="m-15 h2 text-left" color="blue"></Label>
-
-            </StackLayout>
-        </TabView>
+    </StackLayout>
+</TabView>
 
 
-
-</GridLayout>
 
 
 
