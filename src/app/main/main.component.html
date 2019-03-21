@@ -33,7 +33,12 @@
 </ActionBar>
 
 
-<TabView id="tabViewContainer">
+<TabView
+        id="tabViewContainer"
+        abBackgroundColor="red"
+        tabTextFontSize="16"
+        selectedTabTextColor="#212121"
+        androidSelectedTabHighlightColor="#DE373A">
     <StackLayout *tabItem="{title: 'новости'}">
         <GridLayout rows="*">
             <ScrollView row="0">
@@ -42,10 +47,11 @@
                         alignItems="flex-start"
                         class="news-list">
                     <StackLayout *ngFor="let list of  newsListMain" class="news-list-wrap" orientation="vertical">
-                        <Label   text="{{list.title}}" textWrap="true" class="news-list-item"></Label>
+                        <Label text="{{list.title}}" textWrap="true" class="news-list-item"></Label>
                         <FlexboxLayout flexDirection="row" justifyContent="flex-start">
-                            <Label   text="{{list.data}}" textWrap="true" class="data-time"></Label>
-                            <Image src="~/assets/img/png/photo-camera.png" class="ic camera" horizontalAlignment="left"></Image>
+                            <Label text="{{list.data}}" textWrap="true" class="data-time"></Label>
+                            <Image src="~/assets/img/png/photo-camera.png" class="ic camera"
+                                   horizontalAlignment="left"></Image>
                         </FlexboxLayout>
                     </StackLayout>
                 </FlexboxLayout>
@@ -60,10 +66,11 @@
                         alignItems="flex-start"
                         class="news-list">
                     <StackLayout *ngFor="let list of  newsListMain" class="news-list-wrap" orientation="vertical">
-                        <Label   text="{{list.title}}" textWrap="true" class="news-list-item"></Label>
+                        <Label text="{{list.title}}" textWrap="true" class="news-list-item"></Label>
                         <FlexboxLayout flexDirection="row" justifyContent="flex-start">
-                            <Label   text="{{list.data}}" textWrap="true" class="data-time"></Label>
-                            <Image src="~/assets/img/png/photo-camera.png" class="ic camera" horizontalAlignment="left"></Image>
+                            <Label text="{{list.data}}" textWrap="true" class="data-time"></Label>
+                            <Image src="~/assets/img/png/photo-camera.png" class="ic camera"
+                                   horizontalAlignment="left"></Image>
                         </FlexboxLayout>
                     </StackLayout>
                 </FlexboxLayout>
