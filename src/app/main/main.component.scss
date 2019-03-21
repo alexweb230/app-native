@@ -18,6 +18,21 @@
   }
 }
 
-.news-list{
+.news-list {
+  padding-top: 20px;
+  &-wrap{
+    border-bottom-width: 1px;
+    border-bottom-color: #b2a6a7;
+  }
+  &-item {
+   font-size: 16px;
+    color: #212121;
+    padding-bottom: 10px;
+
+  }
+  .camera {
+    width: 24px;
+    height: 24px;
+  }
 
 }
