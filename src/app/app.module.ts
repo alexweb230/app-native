@@ -4,8 +4,9 @@ import { NativeScriptUISideDrawerModule } from "nativescript-ui-sidedrawer/angul
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { PagenewsComponent } from './pagenews/pagenews.component';
+
 import { MainComponent } from './main/main.component';
+import { MainDetailComponent } from './main-detail/main-detail.component';
 
 @NgModule({
     bootstrap: [
@@ -18,8 +19,8 @@ import { MainComponent } from './main/main.component';
     ],
     declarations: [
         AppComponent,
-        PagenewsComponent,
-        MainComponent
+        MainComponent,
+        MainDetailComponent
     ],
     schemas: [
         NO_ERRORS_SCHEMA
