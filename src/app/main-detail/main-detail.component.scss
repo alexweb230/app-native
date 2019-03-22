@@ -1,3 +1,19 @@
-.action-bar-detail{
+.action-bar-detail {
   background-color: silver;
+}
+
+.news-det-cont {
+
+  .detail-text {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #212121;
+  }
+
+  .date{
+    padding-left: 15px;
+    color: #888;
+    padding-top: 5px;
+    font-size: 17px;
+  }
 }
