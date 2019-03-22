@@ -1,19 +1,9 @@
-<ActionBar class="action-bar-detail">
-    <GridLayout columns="*,*" width="100%" class="action-bar-inner">
-        <Label
-                col="0"
-                textAlignment="center"
-                horizontalAlignment="left"
-                class="logo">
-        </Label>
-        <Label text="&#xf0c9;"
-               col="1"
-
-               textAlignment="center"
-               horizontalAlignment="right"
-               class="btn-nav fa fa-bars">
-        </Label>
-    </GridLayout>
+<ActionBar title="новости" class="action-bar-detail">
+    <NavigationButton
+            android.systemIcon="ic_menu_back"
+            text="Back to ActionBar"
+            [nsRouterLink]="['/main']"></NavigationButton>
+    <Label text="новости" class="title-detail"></Label>
 </ActionBar>
 <GridLayout>
     <ScrollView>

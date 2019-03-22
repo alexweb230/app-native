@@ -51,6 +51,7 @@
             <ScrollView row="0">
                 <FlexboxLayout
                         flexDirection="column"
+                        [nsRouterLink]="['/detail']"
                         alignItems="flex-start"
                         class="news-list">
                     <StackLayout *ngFor="let list of  newsListMain" class="news-list-wrap" orientation="vertical">
