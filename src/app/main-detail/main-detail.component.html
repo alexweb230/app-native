@@ -5,12 +5,28 @@
             [nsRouterLink]="['/main']"></NavigationButton>
     <Label text="новости" class="title-detail"></Label>
 </ActionBar>
+<!--<GridLayout>-->
+    <!--<ScrollView>-->
+        <!--<StackLayout class="news-det-cont">-->
+            <!--<Image src="~/assets/img/jpg/1.png"></Image>-->
+            <!--<Label text="22:21 12.03.19"  textWrap="true" class="date"></Label>-->
+            <!--<Label text="{{test}}"  textWrap="true" class="detail-text"></Label>-->
+        <!--</StackLayout>-->
+    <!--</ScrollView>-->
+<!--</GridLayout>-->
 <GridLayout>
-    <ScrollView>
-        <StackLayout class="news-det-cont">
-            <Image src="~/assets/img/jpg/1.png"></Image>
-            <Label text="22:21 12.03.19"  textWrap="true" class="date"></Label>
-            <Label text="{{test}}"  textWrap="true" class="detail-text"></Label>
-        </StackLayout>
-    </ScrollView>
+<ns:Carousel height="100" width="100%" pageChanged="myChangeEvent" pageTapped="mySelectedEvent" indicatorColor="#fff000" finite="true" bounce="false" showIndicator="true" verticalAlignment="top" android:indicatorAnimation="swap" color="white">
+    <ns:CarouselItem id="slide1" backgroundColor="#b3cde0" verticalAlignment="middle">
+        <Label text="Slide 1" backgroundColor="#50000000" horizontalAlignment="center"/>
+    </ns:CarouselItem>
+    <ns:CarouselItem id="slide2" backgroundColor="#6497b1" verticalAlignment="middle">
+        <Label text="Slide 2" backgroundColor="#50000000" horizontalAlignment="center"/>
+    </ns:CarouselItem>
+    <ns:CarouselItem id="slide3" backgroundColor="#005b96" verticalAlignment="middle">
+        <Label text="Slide 3" backgroundColor="#50000000" horizontalAlignment="center"/>
+    </ns:CarouselItem>
+    <ns:CarouselItem id="slide4" backgroundColor="#03396c" verticalAlignment="middle">
+        <Label text="Slide 4" backgroundColor="#50000000" horizontalAlignment="center"/>
+    </ns:CarouselItem>
+</ns:Carousel>
 </GridLayout>
