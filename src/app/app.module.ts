@@ -7,6 +7,7 @@ import { AppComponent } from "./app.component";
 
 import { MainComponent } from './main/main.component';
 import { MainDetailComponent } from './main-detail/main-detail.component';
+import { YoutubePlayerModule } from 'nativescript-youtubeplayer/angular';
 
 @NgModule({
     bootstrap: [
@@ -15,7 +16,10 @@ import { MainDetailComponent } from './main-detail/main-detail.component';
     imports: [
         AppRoutingModule,
         NativeScriptModule,
-        NativeScriptUISideDrawerModule
+        NativeScriptUISideDrawerModule,
+        //YoutubePlayerModule
+
+
     ],
     declarations: [
         AppComponent,

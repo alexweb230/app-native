@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+
+import { registerElement } from "nativescript-angular/element-registry";
+import { Video } from 'nativescript-videoplayer';
+registerElement("VideoPlayer", () => Video);
+
 @Component({
   selector: 'ns-main-detail',
   templateUrl: './main-detail.component.html',
