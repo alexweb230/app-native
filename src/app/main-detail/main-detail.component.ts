@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-
-import { registerElement } from "nativescript-angular/element-registry";
-import { Video } from 'nativescript-videoplayer';
-registerElement("VideoPlayer", () => Video);
-
 @Component({
   selector: 'ns-main-detail',
   templateUrl: './main-detail.component.html',
@@ -12,6 +7,10 @@ registerElement("VideoPlayer", () => Video);
   moduleId: module.id,
 })
 export class MainDetailComponent implements OnInit {
+
+
+    public webViewSrc = "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/3Q11d6I21PE\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+
 
   constructor() { }
 
